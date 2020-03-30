@@ -1,0 +1,24 @@
+server:
+  port: 8040
+  tomcat:
+    basedir: logistics/tomcat
+  compression:
+    mime-types: application/javascript,text/javascript,text/css
+    enabled: true
+    min-response-size: 2048
+spring:
+  http:
+    multipart:
+      enabled: false
+  application:
+    name: steam #项目名称
+  data:
+    mongodb:
+      host: 47.107.243.221
+      port: 27017
+      database: steam
+      username: admin
+      password: YWI1ZTExYj
+      authentication-database: admin
+scan:
+  packages: cn.bytecloud.steam
